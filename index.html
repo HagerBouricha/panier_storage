@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid d-flex justify-content-center me-5">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="games.html">GAMES</a>
+        </div>
+      </div>
+      
+
+      <!--panier-->
+      <div class="panier d-flex justify-content-end">
+        <button class="btn btn-danger" id="rmv" onclick="resetPanier()">x</button>
+        <button class="btn btn-warning" id="shows" onclick="showPanier()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+        </button>
+        <button id="panier" class="btn btn-success">0</button>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+  
+  <!--card_body-->
+      <div class="display-2 d-block bg-primary text-light text-center my-5">OUR AVAILABLE GAMES</div>
+      <div class="container d-flex align-items-center justify-content-around my-5">
+    <div class="card" style="width: 18rem;">
+        <img src="https://cdn.prgloo.com/media/828e38a6bf1f4abbb9b9ca0b93f8203f.png?width=968&height=1452" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">2K22</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+        </div>
+      <button id="fifa" onclick="moveToBuy('2K22')" class="btn btn-primary">Click to add</button>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4OjLo6nEjLYOGmHMhKjkR7pn2anRwQYV9rzKSap8_QvlaU25_nBD5AdYh1QwMcUkLh-Q&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">FIFA 2022</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+        </div>
+      <button id="fifa" onclick="moveToBuy('FIFA 2022')" class="btn btn-primary">Click to add</button>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://www.gametek.tn/597-thickbox_default/uncharted-4-jeux-ps4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">UNCHARTED 4</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+        </div>
+      <button id="fifa" onclick="moveToBuy('UNCHARTED 4')" class="btn btn-primary">Click to add</button>
+      </div>
+      </div>
+
+      <div class="container d-flex align-items-center justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4MgHhyrHH13oYwXezEy7Wy/2553f5667be9635e386ec90ed1798be1/FC6_meta-image__1_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">FARCRY6</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          <button id="fifa" onclick="moveToBuy('FARCRY6')" class="btn btn-primary">Click to add</button>
+          </div>
+    
+          <div class="card" style="width: 18rem;">
+            <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2022/4/25/i2fztzhlhvqrgmikwaqo/fade-valorant" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">VALORANT</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          <button id="fifa" onclick="moveToBuy('VALORANT')" class="btn btn-primary">Click to add</button>
+          </div>
+    
+          <div class="card" style="width: 18rem;">
+            <img src="https://images.radio-canada.ca/q_auto,w_1250/v1/ici-tele/16x9/jeu-among-us-activite-semaine-de-relache.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">AMONG US</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          <button id="fifa" onclick="moveToBuy('AMONG US')" class="btn btn-primary">Click to add</button>
+          </div>
+          </div>
+
+ <!--footer-->
+ <div class="container-fluid ">
+    <div class="my-2 border border-secondary"></div>
+    
+    
+          <img class="img-fluid w-100 h-50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4iW3KO6NpgXx9qt1QYtIH865Gf_hgHNjpg&usqp=CAU" >
+    
+    
+    </div>
+    
+    <footer class="bg-secondary py-3 text-light">
+    <div class="container text-center">
+      <span class="text-dark h2 my-5"> Contact Us </span>
+      <div class="d-flex justify-content-between my-5">
+        <div class="text-left">
+          <p><strong>+216 54021554</strong></p>
+        </div>
+        <div>
+          <p><strong>Master Class Manouba</strong></p>
+        </div>
+        <div class="text-right">
+          <strong>Masterclass.com</strong>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+
+
+
+          
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
